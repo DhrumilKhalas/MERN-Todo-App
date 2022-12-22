@@ -1,0 +1,186 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:bisque;
+  width: 500px;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 20px;
+  border:3px solid black;
+}
+.App h1{
+  text-align: center;
+}
+.form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 12px
+}
+.form input[type="text"]{
+  padding:10px;
+  width: 85%;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+.form input[type="text"]:focus,
+.form button[type="submit"]:focus{
+  outline:none;
+}
+.form button[type="submit"]{
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer
+}
+.todo-listItems{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.todo-item{
+  display:flex;
+  justify-content:"center";
+  align-items: center;
+  margin-bottom: 10px 
+}
+/* .item-content{ */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  
+/* } */
+.todo-item button{
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px
+}
+.todo-item button:focus{
+  outline:none;
+
+}
+.update-item{
+  background-color: goldenrod;
+  color:#fff;
+  width: 60px;
+  
+}
+.delete-item{
+  background-color: red;
+  color:#fff;
+  width: 60px;
+  
+}
+.btn{
+  display: flex;
+  align-items: center;
+}
+.update-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 7%;
+  gap:10px;
+}
+.update-new-input{
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 8px;
+  outline: none;
+}
+.update-new-btn{
+  background-color: darkorchid;
+  color: #fff;
+  cursor: pointer;
+  width: max-content;
+}
+.btnanditem{
+  display: flex;
+  flex-direction: column;
+}
+.todoupdateanddeletebtn{
+  /* width:100%; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+.inputandbtn{
+  display: flex;
+  align-items: center;
+  width:100%;
+  gap: 5px;
+  
+}
+#texttodo{
+  margin-top: 5px;
+}
+textarea{
+  resize:vertical;
+}
+@media only screen and (max-width:299px){
+  .App{
+    width: 86%;
+  }
+  /* .update-new-btn{
+    width: 10%;
+  }
+  .update-new-input{
+width: 89%;
+  } */
+}
+@media only screen and (min-width:300px) and (max-width:500px){
+  .App{
+    width: 86%;
+  }
+  /* .update-new-btn{
+    width: 10%;
+  }
+  .update-new-input{
+width: 89%;
+  } */
+}
+@media only screen and (min-width:501px) and (max-width:700px){
+  .App{
+    width: 86%;
+  }
+  /* .update-new-btn{
+    width: 10%;
+  }
+  .update-new-input{
+width: 89%;
+  } */
+  
+}
+@media only screen and (min-width:701px) and (max-width:1000px){
+  .App{
+    width: 60%;
+  }
+  /* .update-new-btn{
+    width: 10%;
+  }
+  .update-new-input{
+width: 89%;
+  } */
+ 
+}
+@media only screen and (min-width:1001px) {
+  .App{
+    width: 50%;
+  }
+  /* .update-new-btn{
+    width: 10%;
+  }
+  .update-new-input{
+width: 89%;
+  } */
+
+}
+
